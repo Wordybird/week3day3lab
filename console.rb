@@ -10,6 +10,9 @@ album1.save()
 album2=Album.new({'title'=>'Black Star','genre'=>'rock','artist_id'=>artist1.id})
 album2.save()
 
+Artist.all()
+Album.all()
+
 binding.pry
 
 nil
