@@ -51,4 +51,10 @@ class Album
     SqlRunner.run(sql)
   end
 
+  def find_by_id
+    sql = "SELECT * FROM albums WHERE id=#{@id};"
+    result = SqlRunner.run(sql)
+    return result[0]
+  end
+
 end
