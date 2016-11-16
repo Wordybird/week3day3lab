@@ -39,11 +39,11 @@ class Album
     SqlRunner.run(sql)
   end
 
-  # def delete
-  #   return unless @id
-  #   sql="DELETE FROM albums WHERE id = #{@id};"
-  #   SqlRunner.run(sql)
-  # end
+  def delete
+    return unless @id
+    sql="DELETE FROM albums WHERE id = #{@id};"
+    SqlRunner.run(sql)
+  end
 
   def update
     sql="UPDATE albums SET

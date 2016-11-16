@@ -9,10 +9,10 @@ artist1=Artist.new({"name"=>"David Bowie"})
 artist1.save()
 artist2=Artist.new({"name"=>"Lid Zeppelin"})
 artist2.save()
-# artist3=Artist.new({"name"=>"Saxon"})
-# artist3.save()
+artist3=Artist.new({"name"=>"Saxon"})
+artist3.save()
 
-# artist3.delete()
+artist3.delete()
 
 album1=Album.new({'title'=>'Heroes','genre'=>'rock','artist_id'=>artist1.id})
 album1.save()
