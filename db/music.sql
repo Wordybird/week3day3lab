@@ -1,6 +1,7 @@
 DROP TABLE IF EXISTS songs;
 DROP TABLE IF EXISTS albums;
 DROP TABLE IF EXISTS artists;
+#Drop tables in reverse order to what order you create them in.
 
 CREATE TABLE artists(
   id SERIAL8 primary key,
